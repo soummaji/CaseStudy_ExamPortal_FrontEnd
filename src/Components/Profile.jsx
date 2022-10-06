@@ -6,7 +6,6 @@ const Profile = () => {
 
     const role = localStorage.getItem("role");
     const useremail = localStorage.getItem("useremail");
-    const studentId = localStorage.getItem("studentId");
 
     return (
         <div>
@@ -19,7 +18,6 @@ const Profile = () => {
                         <br></br>
                         <h4> <u> User Detail:</u> {useremail}</h4>
                         <br></br>
-                        <h4> <u> User Id:</u> {studentId}</h4>
                     </div>
                 </div>
             </div>

@@ -61,7 +61,7 @@ const Registration = () => {
         <div>
             <div className="vh-100 d-flex justify-content-center align-items-center">
                 <div className="col-md-4 p-4 shadow-sm border rounded-5 border-primary">
-                    <h2 className="text-center mb-4 text-primary">Admin Regintration</h2>
+                    <h2 className="text-center mb-4 text-primary">Admin Registration</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label  className="form-label">Email address</label>
