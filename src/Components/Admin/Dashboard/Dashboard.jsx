@@ -43,6 +43,7 @@ const Dashboard = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault();
+    e.target.reset();
     if (subject.subject === "" || subject.question === "" || rad === "") {
       console.log("error");
       toast.warning("Fields can't be empty", {
@@ -78,6 +79,8 @@ const Dashboard = () => {
           setRad("")
         })
     }
+
+
   };
 
   return (
@@ -113,9 +116,8 @@ const Dashboard = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="exampleModalLabel">Add Subjects</h1>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id="create-course-form">
               <div className="modal-body">
                 <div className="mb-3">
                   <label  className="form-label">Subject</label>

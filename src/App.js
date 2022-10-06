@@ -14,6 +14,8 @@ import Test from './Components/User/Subject/Test';
 import ViewAnswers from './Components/Admin/Subject/ViewAnswers';
 import ProtectedRoute from './Components/User/ProtectedRoute';
 import ProtectedRouteAdmin from './Components/Admin/ProtectedRouteAdmin';
+import AboutUs from './Components/AboutUs';
+import Profile from './Components/Profile';
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route exact path='/adminLogin' element={<Login />} />
           <Route exact path='/adminRegistration/adminLogin' element={<Login />} />
           <Route exact path='/adminRegistration' element={<Registration />} />
+          <Route exact path='/aboutUs' element={<AboutUs />} />
+          <Route exact path='/profile' element={<Profile />} />
 
           <Route element={<ProtectedRouteAdmin />} >
             <Route exact path='/adminDashboard' element={<Dashboard />} />

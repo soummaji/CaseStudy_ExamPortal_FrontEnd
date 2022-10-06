@@ -16,20 +16,18 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-          <a href="#" className="navbar-brand">
-            {/* <img src="images/logo.svg" height="28" alt="CoolBrand"> */}
-          </a>
+          <a className="navbar-brand"></a>
           <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav">
-            <>{role === "Admin" ?
-            (<Link className="nav-item nav-link active" to= "/adminDashboard">Dashboard</Link>) :
-            (<Link className="nav-item nav-link active" to="/studentDashboard">Dashboard</Link>)
-          }</>
-              <Link to="Profile" className="nav-item nav-link active">Profile</Link>
-              <Link to="AboutUs" className="nav-item nav-link active">About Us</Link>
+              <>{role === "Admin" ?
+                (<Link className="nav-item nav-link active" to="/adminDashboard">Dashboard</Link>) :
+                (<Link className="nav-item nav-link active" to="/studentDashboard">Dashboard</Link>)
+              }</>
+              <Link to="/Profile" className="nav-item nav-link active">Profile</Link>
+              <Link to="/AboutUs" className="nav-item nav-link active">About Us</Link>
             </div>
             <div className="navbar-nav ms-auto">
               <Link to="/" className="nav-item nav-link active" onClick={handleLogout}>Logout</Link>
