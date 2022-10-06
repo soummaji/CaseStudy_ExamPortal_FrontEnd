@@ -68,10 +68,10 @@ const Login = () => {
         <div>
             <div className="vh-100 d-flex justify-content-center align-items-center">
                 <div className="col-md-4 p-5 shadow-sm border rounded-5 border-primary">
-                    <h2 className="text-center mb-4 text-primary">Admin Login Form</h2>
+                    <h2 className="text-center mb-4 text-primary">Admin Login</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
-                            <label className="form-label">UserName</label>
+                            <label className="form-label">User Name</label>
                             <input type="text" className="form-control bg-info bg-opacity-10 border border-primary" id="exampleInputUsername" aria-describedby="usernameHelp" name="userName" onChange={handleChange} value={user.userName} required />
                         </div>
                         <div className="mb-3">

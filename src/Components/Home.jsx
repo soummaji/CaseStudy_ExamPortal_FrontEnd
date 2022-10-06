@@ -1,8 +1,14 @@
 import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Home = () => {
+
+    useEffect(() => {
+        localStorage.clear();
+      }
+      )
 
     return (
         <div className="background">
@@ -17,7 +23,7 @@ const Home = () => {
                                 <h5 className="card-title text-center">Student</h5>
                                 <p className="card-text">Student can login and choose any subject of his/her choice to give exam only once per subject.</p>
                                 <div className='text-center'>
-                                    <a href="#" className="btn btn-primary">Click Here!</a>
+                                    <Link to="/studentLogin" className="btn btn-primary">Click Here!</Link>
                                 </div>
                             </div>
                         </div>

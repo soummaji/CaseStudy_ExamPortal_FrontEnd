@@ -23,16 +23,16 @@ const SelectStudents = () => {
 
     }
 
-    // const click = (id) => {
-    //     console.log(id);
-    //     navigate(`/viewanswersA/${subject}/${id}`);
-    // }
+    const click = (id) => {
+        console.log(id);
+        navigate(`/viewAnswers/${subject}/${id}`);
+    }
 
     return (
         <div>
 
             <Navbar></Navbar>
-            <h1 className='text-center mt-4'><u>Online Exam Portal</u></h1>
+            <h1 className='text-center mt-4'><u>Select Student</u></h1>
             <div className='mx-5'>
                 <div className="card col-md-5 mx-auto mt-4 bg-primary">
                     <div className="card-body text-light">
@@ -44,7 +44,7 @@ const SelectStudents = () => {
 
 
                 {data.map((item) =>
-                    <div className="card col-md-5 mx-auto mt-1 border-0">
+                    <div className="card col-md-5 mx-auto mt-1 border-0" onClick={() => click(item.id)}>
                         <button type="button" className="btn btn-outline-info py-0">
                             <div className="card-body">
                                 <h5>{item.fullName}</h5>

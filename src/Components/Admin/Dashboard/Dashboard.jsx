@@ -83,7 +83,7 @@ const Dashboard = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <h1 className='text-center mt-4'><u>Hello Admin ! Welcome to Online Exam Portal</u></h1>
+      <h1 className='text-center mt-4'><u>Hello {username} ! Welcome to Online Exam Portal</u></h1>
       <div className='mx-5'>
         <div className="card col-md-5 mx-auto mt-4 bg-primary">
           <div className="card-body text-light">
@@ -105,7 +105,7 @@ const Dashboard = () => {
 
       </div>
       <div className='fixed-bottom d-flex justify-content-center'>
-        <button type="button" className="btn btn-primary text-light btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Subject</button>
+        <button type="button" className="btn btn-primary text-light btn-lg mb-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Subject</button>
       </div>
 
       <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -118,22 +118,22 @@ const Dashboard = () => {
             <form onSubmit={handleSubmit}>
               <div className="modal-body">
                 <div className="mb-3">
-                  <label for="exampleFormControlInput1" className="form-label">Subject</label>
+                  <label  className="form-label">Subject</label>
                   <input type="text" className="form-control" id="exampleFormControlInput1" name="subject" onChange={handleChange} value={subject.subject} />
                 </div>
                 <div className="mb-3">
-                  <label for="exampleFormControlInput1" className="form-label">Question</label>
+                  <label  className="form-label">Question</label>
                   <input type="text" className="form-control" id="exampleFormControlInput1" name="question" onChange={handleChange} value={subject.question} />
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input className="form-check-input" type="radio" name="answer" value="True" onChange={() => radioChange('True')} />
-                  <label className="form-check-label" for="flexRadioDefault1">
+                  <label className="form-check-label" >
                     True
                   </label>
                 </div>
                 <div className="form-check">
                   <input className="form-check-input" type="radio" name="answer" value="True" onChange={() => radioChange('False')} />
-                  <label className="form-check-label" for="flexRadioDefault1">
+                  <label className="form-check-label" >
                     False
                   </label>
                 </div>
