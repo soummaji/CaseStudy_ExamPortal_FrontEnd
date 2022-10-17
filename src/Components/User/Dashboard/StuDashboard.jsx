@@ -74,7 +74,7 @@ const StuDashboard = () => {
         <div className="card col-md-5 mx-auto mt-4 bg-primary">
           <div className="card-body text-light">
             <h4>
-              I want to make changes in :-
+              Select a subject to give the test :-
             </h4>
           </div>
         </div>
